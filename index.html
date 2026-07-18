@@ -43,7 +43,8 @@
   .nav-inner{ display:flex; align-items:center; justify-content:space-between; padding:20px 40px; max-width:1400px; margin:0 auto; gap:24px; }
   @media (max-width:700px){ .nav-inner{ padding:16px 22px; } }
   .logo-img{ height:22px; width:auto; }
-  :root[data-theme="light"] .logo-img{ filter:invert(1); }
+  :root[data-theme="dark"] .logo-light{ display:none; }
+  :root[data-theme="light"] .logo-dark{ display:none; }
   .nav-links{ display:flex; gap:40px; list-style:none; margin:0; padding:0; flex:1; justify-content:center; }
   .nav-links a{ font-size:13px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); transition:color .15s ease; }
   .nav-links a:hover{ color:var(--text); }
@@ -187,7 +188,10 @@
 
 <header>
   <div class="nav-inner">
-    <a href="https://www.exabeam.com/" class="logo"><img class="logo-img" src="https://cdn-ilemogb.nitrocdn.com/hxeNzoFtzCLhholgTkBlCriLCctWhMdW/assets/images/source/rev-cb45094/www.exabeam.com/wp-content/uploads/MISC-Exabeam-dark-logo-01.svg" alt="Exabeam" height="22"></a>
+    <a href="https://www.exabeam.com/" class="logo">
+      <img class="logo-img logo-dark" src="https://cdn-ilemogb.nitrocdn.com/hxeNzoFtzCLhholgTkBlCriLCctWhMdW/assets/images/source/rev-cb45094/www.exabeam.com/wp-content/uploads/MISC-Exabeam-dark-logo-01.svg" alt="Exabeam" height="22">
+      <img class="logo-img logo-light" src="https://cdn-ilemogb.nitrocdn.com/hxeNzoFtzCLhholgTkBlCriLCctWhMdW/assets/images/source/rev-cb45094/www.exabeam.com/wp-content/uploads/MISC-Exabeam-light-logo-01.svg" alt="Exabeam" height="22">
+    </a>
     <ul class="nav-links">
       <li><a href="#platform">Platform</a></li>
       <li><a href="#threat">Threat</a></li>
@@ -391,7 +395,8 @@
 <footer>
   <div class="wrap">
     <div class="footer-top">
-      <img class="logo-img" src="https://cdn-ilemogb.nitrocdn.com/hxeNzoFtzCLhholgTkBlCriLCctWhMdW/assets/images/source/rev-cb45094/www.exabeam.com/wp-content/uploads/MISC-Exabeam-dark-logo-01.svg" alt="Exabeam" height="20">
+      <img class="logo-img logo-dark" src="https://cdn-ilemogb.nitrocdn.com/hxeNzoFtzCLhholgTkBlCriLCctWhMdW/assets/images/source/rev-cb45094/www.exabeam.com/wp-content/uploads/MISC-Exabeam-dark-logo-01.svg" alt="Exabeam" height="20">
+      <img class="logo-img logo-light" src="https://cdn-ilemogb.nitrocdn.com/hxeNzoFtzCLhholgTkBlCriLCctWhMdW/assets/images/source/rev-cb45094/www.exabeam.com/wp-content/uploads/MISC-Exabeam-light-logo-01.svg" alt="Exabeam" height="20">
       <ul class="footer-links">
         <li><a href="#platform">Platform</a></li>
         <li><a href="#threat">Solutions</a></li>
